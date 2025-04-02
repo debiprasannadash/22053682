@@ -5,7 +5,7 @@ export default function Avg_cal(){
     const [numberType, setNumberType]=useState("p")
     const [prevState, setPrevState] = useState([])
     const [currState, setCurrState] = useState([])
-    const [average, setAverage] = useState(null)
+    const [avg, setAvg] = useState(null)
 
     const apiurls = {
         p:"http://20.244.56.144/evaluation-service/primes",
@@ -13,6 +13,8 @@ export default function Avg_cal(){
         e:"http://20.244.56.144/evaluation-service/even",
         r:"http://20.244.56.144/evaluation-service/rand"
     };
+
+    
     
     return(
         <div className="">
@@ -31,6 +33,12 @@ export default function Avg_cal(){
 
             <div className="mt-[4%] flex justify-center">
                 <buttton className=" rounded bg-amber-500 hover:bg-green-400">Fetch nos.</buttton>
+            </div>
+
+            <div className=" mt-[4%] text-2xl ml-[24%]">
+                <p>Prev State is : </p>
+                <p>Current State is : </p>
+                <p>Average is : </p>
             </div>
         </div>
     )
