@@ -9,12 +9,13 @@ export default function Avg_cal(){
                 <h1 className=" text-4xl ">Average Calculator</h1>
             </div>
             <div className="mt-[4%]">
-            <select>
+            <select className=" border rounded">
                     <option>Prime Numbers</option>
                     <option>Fibonacci Numbers</option>
                     <option>Even Numbers</option>
                     <option>Random Numbers</option>
                 </select>
+                
             </div>
         </div>
     )
