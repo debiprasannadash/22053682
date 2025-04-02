@@ -14,9 +14,6 @@ export default function Avg_cal(){
         r:"http://20.244.56.144/evaluation-service/rand"
     };
 
-
-    
-    
     return(
         <div className="">
             <div className=" mt-[4%] flex justify-center">
@@ -33,13 +30,13 @@ export default function Avg_cal(){
             </div>
 
             <div className="mt-[4%] flex justify-center">
-                <buttton className=" rounded bg-amber-500 hover:bg-green-400">Fetch nos.</buttton>
+                <button className=" rounded bg-amber-500 hover:bg-green-400">Fetch nos.</button>
             </div>
 
             <div className=" mt-[4%] text-2xl ml-[24%]">
                 <p>Prev State is : {JSON.stringify(prevState)}</p>
                 <p>Current State is : {JSON.stringify(currState)}</p>
-                <p>Average is : {avg !=NULL ? avg:"N/A"}</p>
+                <p>Average is : {avg !== null ? avg : "N/A"}</p>
             </div>
         </div>
     )
